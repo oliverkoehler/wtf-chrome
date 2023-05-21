@@ -1,5 +1,3 @@
-import '../assets/tailwind.css'
-
 const newDiv = document.createElement("div")
 const newContent = document.createTextNode("Test")
 newDiv.appendChild(newContent)
