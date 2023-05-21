@@ -1,9 +1,9 @@
 {
-  "name": "vite-web-extension",
+  "name": "wtf-extension",
   "version": "1.0.0",
-  "displayName": "Vite Web Extension",
-  "author": "@samrum/vite-plugin-web-extension",
-  "description": "A @samrum/vite-plugin-web-extension web extension",
+  "displayName": "WTF Heal Extension",
+  "author": "Oliver Koehler",
+  "description": "A WTF Torn Extension",
   "scripts": {
     "build": "vite build",
     "watch": "vite build --watch --mode development --minify false",
@@ -21,6 +21,9 @@
     "web-ext": "^7.6.1"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^3.2.47",
     "webextension-polyfill": "^0.10.0"
   }
