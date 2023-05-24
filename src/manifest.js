@@ -45,6 +45,7 @@ export function getManifest() {
     name: pkg.displayName ?? pkg.name,
     version: pkg.version,
     manifest_version: 3,
+    permissions: ["storage", "tabs"],
     ...manifest,
   };
 }

@@ -1,10 +1,3 @@
 <template>
-  <div class="bg-yellow text-xs">123</div>
+  <div>123456890</div>
 </template>
-
-<script setup>
-</script>
-
-<style scoped>
-
-</style>
