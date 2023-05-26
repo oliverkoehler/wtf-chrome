@@ -1,3 +1,3 @@
 <template>
-  <div>123456890</div>
+  <div></div>
 </template>

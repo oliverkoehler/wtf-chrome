@@ -17,3 +17,7 @@ export const waitForElm = (selector) => {
         });
     });
 }
+
+export const getUrlPath = () => {
+    return window.location.pathname.replace('/', '').replace('.php', '')
+}

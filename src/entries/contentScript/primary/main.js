@@ -1,7 +1,7 @@
 import {createApp, render} from "vue";
 import renderContent from "../renderContent";
 import App from "./App.vue";
-import { waitForElm } from '../../../helper'
+import { waitForElm, getUrlPath } from '../../../helper'
 
 const reviveHandler = async () => {
   await waitForElm('#mainContainer > div.content-wrapper.spring > div.userlist-wrapper.hospital-list-wrapper > ul > li:nth-child(1) > span > span.reason')
@@ -18,7 +18,7 @@ const reviveHandler = async () => {
 }
 
 const mountApp = async () => {
-  const path = window.location.pathname.replace('/', '').replace('.php', '')
+  const path = getUrlPath()
 
   if (path.includes('hospitalview')) await reviveHandler()
 
@@ -27,7 +27,7 @@ const mountApp = async () => {
 }
 
 renderContent(import.meta.PLUGIN_WEB_EXT_CHUNK_CSS_PATHS, async (appRoot) => {
-  await mountApp()
+  if (path.includes('hospitalview')) await mountApp()
 });
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {

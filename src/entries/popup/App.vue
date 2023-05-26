@@ -1,19 +1,9 @@
 <template>
-  <main>
-    <PageContent> Popup </PageContent>
+  <main class="bg-[#182028] text-white border-4 border-gray-950 p-2 max-w-xs w-[670px]">
+      <MainPage />
   </main>
 </template>
 
 <script setup>
-import PageContent from "~/components/PageContent.vue";
+import MainPage from "~/components/MainPage.vue";
 </script>
-
-<style>
-main {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>
