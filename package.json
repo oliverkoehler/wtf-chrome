@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.1.2",
+    "moment": "^2.29.4",
     "vue": "^3.2.47",
     "webextension-polyfill": "^0.10.0"
   }

@@ -6,7 +6,7 @@ import { waitForElm, getUrlPath } from '../../../helper'
 const reviveHandler = async () => {
   await waitForElm('#mainContainer > div.content-wrapper.spring > div.userlist-wrapper.hospital-list-wrapper > ul > li:nth-child(1) > span > span.reason')
 
-  const blacklistUsers = ['Jake', 'Kanani']
+  const blacklistUsers = ['', 'LeoMSt']
 
   const revives = document.getElementsByClassName('user name ')
 
