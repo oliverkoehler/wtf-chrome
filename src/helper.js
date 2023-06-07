@@ -1,3 +1,6 @@
+import {useFetch, useStorage} from "@vueuse/core";
+const storage = useStorage('wtf', {})
+
 export const waitForElm = (selector) => {
   return new Promise(resolve => {
     if (document.querySelector(selector)) {
@@ -33,4 +36,8 @@ export const updateRevives = async (stats) => {
   stats.total++
 
   return stats
+}
+
+export const fetchTorn = (url) => {
+  return useFetch('https://api.torn.com/' + url + '&key=' +storage.value.apiKey).json()
 }

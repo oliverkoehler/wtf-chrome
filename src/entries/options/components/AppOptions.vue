@@ -7,7 +7,7 @@
     >
       <div class="space-y-3">
         <div class="flex items-center justify-between">
-          <h2 class="text-xl font-bold text-white">Dashboard</h2>
+          <h2 class="text-xl font-bold text-white">Settings</h2>
         </div>
         <div class="flex-1">
           <ul class="pt-2 pb-4 space-y-1 text-sm">
@@ -35,6 +35,7 @@
     <!-- Content -->
     <div class="m-10">
       <AppHome v-if="currentView === 'home'"/>
+      <AppChat v-if="currentView === 'chat'"/>
     </div>
   </div>
 </template>
@@ -46,6 +47,7 @@ import AppIconHome from "~/entries/options/icons/appiconhome.vue";
 import AppIconChartSimple from "~/components/AppIconChartSimple.vue";
 import AppIconRightFromBracket from "~/components/AppIconRightFromBracket.vue";
 import AppHome from "~/entries/options/components/AppHome.vue";
+import AppChat from "~/entries/options/components/AppChat.vue";
 
 const isOpen = ref(false);
 
